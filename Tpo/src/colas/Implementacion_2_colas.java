@@ -23,7 +23,7 @@ public class Implementacion_2_colas implements ColaTDA {
     public void AcolarPrioridad(int x, int prioridad) {
         int j = indice;
         // Busca la posición adecuada para agregar el nuevo elemento
-        for (; j > 0 && elementos[j-1].prioridad >= prioridad; j--) {
+        for (; j > 0 && elementos[j-1].prioridad <= prioridad; j--) {
             elementos[j] = elementos[j-1]; // Desplaza los elementos para hacer espacio
         }
         // Crea un nuevo elemento y lo inserta en la posición correcta
@@ -53,4 +53,13 @@ public class Implementacion_2_colas implements ColaTDA {
     public int Prioridad() {
         return elementos[indice-1].prioridad;
     }
+
+    public void mostrar() {
+		for(int i =indice-1;i!=-1;i--) {
+			System.out.println("este es el valor "+ elementos[i].valor+ " esta es la prioridad "+ elementos[i].prioridad);
+			
+		}
+	}
+
+
 }
