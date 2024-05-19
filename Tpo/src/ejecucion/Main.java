@@ -62,7 +62,7 @@ public class Main {
             }
             // Si entradaValida sigue siendo falso, se continuará con el siguiente ciclo del while sin incrementar i
         }
-
+        colaPrioridad.mostrar();
         scanner.close();
 
         // Desencolar clientes y agregarlos a los conjuntos correspondientes
@@ -84,6 +84,8 @@ public class Main {
                     break;
             }
         }
+
+   
 
         // Se imprimen los conjuntos
         System.out.println("Conjunto Empresa:");
@@ -115,4 +117,7 @@ public class Main {
         }
         System.out.println();
     }
+    
+
+    
 }
