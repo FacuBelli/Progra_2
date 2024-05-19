@@ -24,3 +24,5 @@ El servicio consiste en desencolar todos los clientes de la Cola de Prioridad y 
 
 ●	Desencolar un cliente de la Cola de Prioridad: Costo O(1).
 ●	Agregar el cliente al Conjunto correspondiente: Costo O(n), donde n es el número de elementos en el Conjunto.
+
+
