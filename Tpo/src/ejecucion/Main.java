@@ -105,11 +105,11 @@ public class Main {
         } else {
             boolean primerElemento = true;
             while (!conjunto.ConjuntoVacio()) {
-                int elemento = conjunto.Elegir();
-                conjunto.Sacar(elemento);
+                int elemento = conjunto.Elegir();//elije un elemento
+                conjunto.Sacar(elemento);//elimina el elemento(el ultimo)
                 if (primerElemento) {
                     System.out.print(elemento);
-                    primerElemento = false;
+                    primerElemento = false;//pone un espacio si es el primero
                 } else {
                     System.out.print(" " + elemento);
                 }
